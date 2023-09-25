@@ -1,7 +1,7 @@
 module "bucket" {
-  source = "github.com/terraform-google-modules/terraform-google-cloud-storage.git/modules/simple_bucket"
+  source = "github.com/sujit-cmd/my-rf-repo.git?ref=dev"
 
-  name       = "${var.project_id}-bucket-1"
+  name       = "${var.project_id}-bucket-2"
   project_id = var.project_id
   location   = "us"
 }
